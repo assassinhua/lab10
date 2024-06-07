@@ -1,9 +1,9 @@
 name: Deploy docker ci basic application
- 'on':
+'on':
    push:
      branches:
        - main
- jobs:
+jobs:
    docker:
      runs-on: ubuntu-latest
      steps:
@@ -28,8 +28,10 @@ name: Deploy docker ci basic application
          with:
            context: .
            push: true
-           tags: {your docker hub account }/docker-ci-basic:latest
-      -
+           tags: 1uvv/docker-ci-basic:latest     
+           
+        
+       -
          name: copy file via ssh password
          uses: appleboy/scp-action@v0.1.4
          with:
