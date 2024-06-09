@@ -1,6 +1,6 @@
 version: '3'
 services:
   server:
-    image: assassinhua/docker-ci-basic:latest
+    image: assassinhua/docker-ci-basic
     ports:
       - 8080:80
